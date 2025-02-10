@@ -1,3 +1,5 @@
+const emotionRadios = document.getElementById("emotion-radios");
+
 const catsData = [
     {
         emotionTags: ["moody"],
@@ -181,4 +183,14 @@ function getEmotionsArray(cats){
 
 function renderEmotionsRadios(cats) {
     const emotions = getEmotionsArray(cats);
+
+    let radioItems = ``;
+
+    for (let emotion of emotions) {
+        radioItems += `<p>${emotion}</p>`
+    }
+
+    emotionRadios.innerHTML = radioItems;
 }
+
+renderEmotionsRadios(catsData);
