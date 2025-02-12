@@ -22,10 +22,10 @@ function renderEmotionsRadios(cats) {
         <div class="radio">
             <label for="${emotion}">${emotion}</label>
             <input
-            type="radio"
-            id="${emotion}"
-            value="${emotion}"
-            name="choice-radios"
+                type="radio"
+                id="${emotion}"
+                value="${emotion}"
+                name="emotions"
             >
         </div>
         `
