@@ -5,7 +5,7 @@ const getImageBtn = document.getElementById("get-image-btn");
 const gifsOnlyOption = document.getElementById("gifs-only-option");
 
 emotionRadios.addEventListener("change", highlightCheckedOption);
-getImageBtn.addEventListener("click", getMatchingCatsArray);
+getImageBtn.addEventListener("click", renderCat);
 
 function highlightCheckedOption(e) {
     const radioArray = document.getElementsByClassName("radio");
@@ -30,6 +30,14 @@ function getMatchingCatsArray() {
         });
         return matchingCatsArray;
     };
+    
+};
+
+function getSingleCatObject() {
+
+};
+
+function renderCat() {
     
 };
 
