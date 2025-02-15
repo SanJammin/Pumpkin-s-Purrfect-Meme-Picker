@@ -16,21 +16,21 @@ function highlightCheckedOption(e) {
 };
 
 function getMatchingCatsArray() {
-    let checkRadio = document.querySelector('input=[name="emotions"]:checked')
+    let checkRadio = document.querySelector('input=[name="emotions"]:checked');
     
     if(checkRadio != null){
         const selectedEmotion = document.querySelector('input[type="radio"]:checked').value;
         const isGifChecked = gifsOnlyOption.checked;
         const matchingCatsArray = catsData.filter(function(cat){
             if (isGifChecked){
-                return cat.emotionTags.includes(selectedEmotion) && cat.isGif === true;
+                return cat.emotionTags.includes(selectedEmotion) && cat.isGif;
             } else {
                 return cat.emotionTags.includes(selectedEmotion);
             };     
         });
     };
     
-}
+};
 
 function getEmotionsArray(cats){
     const emotionArray = [];
