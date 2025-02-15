@@ -34,7 +34,13 @@ function getMatchingCatsArray() {
 };
 
 function getSingleCatObject() {
-
+    const catsArray = getMatchingCatsArray();
+    if (catsArray.length === 1) {
+        return catsArray[0];
+    } else {
+        let randomCat = Math.round(Math.random() * (catsArray.length - 1));
+        return catsArray[randomCat];
+    };
 };
 
 function renderCat() {
