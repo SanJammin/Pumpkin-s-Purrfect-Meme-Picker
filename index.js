@@ -38,7 +38,7 @@ function getSingleCatObject() {
     if (catsArray.length === 1) {
         return catsArray[0];
     } else {
-        let randomCat = Math.round(Math.random() * (catsArray.length - 1));
+        const randomCat = Math.floor(Math.random() * catsArray.length);
         return catsArray[randomCat];
     };
 };
