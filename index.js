@@ -28,6 +28,7 @@ function getMatchingCatsArray() {
                 return cat.emotionTags.includes(selectedEmotion);
             };     
         });
+        return matchingCatsArray;
     };
     
 };
