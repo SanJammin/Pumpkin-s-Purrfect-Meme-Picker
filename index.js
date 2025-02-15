@@ -21,6 +21,9 @@ function getMatchingCatsArray() {
 
     if(checkRadio != null){
         const selectedEmotion = document.querySelector('input[type="radio"]:checked').value;
+        const matchingCatsArray = catsData.filter(function(cat){
+            return cat.emotionTags.includes(selectedEmotion);
+        });
     };
     
 }
